@@ -1,30 +1,26 @@
+// n=3
+// AAA
+// BBB
+// CCC
 
-// n=4
-// D
-// CD
-// BCD
-// ABCD
 #include<iostream>
 using namespace std;
-
-int main()
-{
+int main(){
     int n;
     cout<<"Enter the number of rows: ";
     cin>>n;
-    
+
     int row = 1;
     while(row<=n){
-        char ch = 'A' + n - row;
 
+        char ch = 'A'+row-1;
         int col = 1;
-        while(col<=row){
+        while(col<=n){
             cout<<ch;
             col++;
-            ch++;
         }
+
         cout<<endl;
         row++;
     }
-
 }
