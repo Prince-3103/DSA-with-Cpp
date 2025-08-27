@@ -1,6 +1,8 @@
 // Unsorted array: 9 1 4 3 
 // Sorted Array: 1 3 4 9 
 
+// Time Complexity -> O(n^2)
+
 #include<iostream>
 using namespace std;
 
