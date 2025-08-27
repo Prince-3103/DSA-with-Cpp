@@ -1,3 +1,6 @@
+// Unsorted array: 9 1 4 3 
+// Sorted Array: 1 3 4 9 
+
 #include<iostream>
 using namespace std;
 
@@ -25,7 +28,7 @@ int main(){
     }
     cout<<"Unsorted array: ";
     for(int i = 0; i<n; i++){
-        cout<<arr[i];
+        cout<<arr[i]<<" ";
     }
     cout<<endl;
 
@@ -33,7 +36,7 @@ int main(){
 
     cout<<"Sorted Array: ";
     for(int i = 0; i<n; i++){
-        cout<<arr[i];
+        cout<<arr[i]<<" ";
     }
     cout<<endl;
 }
