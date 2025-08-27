@@ -9,6 +9,7 @@ void selectionSort(int arr[], int size){
                 minIndex = j;
             }
         }
+        swap(arr[i], arr[minIndex]);
     }
 }
 
@@ -23,6 +24,14 @@ int main(){
         cin>>arr[i];
     }
     cout<<"Unsorted array: ";
+    for(int i = 0; i<n; i++){
+        cout<<arr[i];
+    }
+    cout<<endl;
+
+    selectionSort(arr,n);
+
+    cout<<"Sorted Array: ";
     for(int i = 0; i<n; i++){
         cout<<arr[i];
     }
