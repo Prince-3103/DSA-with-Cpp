@@ -28,4 +28,12 @@ int main(){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
+
+    bubbleSort(arr,n);
+
+    cout<<"Sorted Array: ";
+    for(int i = 0; i<n; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
 }   
