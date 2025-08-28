@@ -1,3 +1,8 @@
+// Unsorted array: 10 1 7 4 2 11 
+// Sorted Array: 1 2 4 7 10 11 
+
+// Page no. -> 29
+
 #include<iostream>
 using namespace std;
 
