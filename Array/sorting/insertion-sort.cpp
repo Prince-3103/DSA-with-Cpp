@@ -35,4 +35,8 @@ int main(){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
+
+    insertionSort(arr,n);
+
+    
 }
