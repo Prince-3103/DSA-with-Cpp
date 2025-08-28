@@ -3,6 +3,16 @@
 
 // Page no. -> 29
 
+// Best Case (Already Sorted, with optimization):
+// O(n) → Only one pass needed (if we use a “swapped” flag).
+
+// Worst Case (Reverse Sorted):
+// O(n²) → Every element needs to be compared & swapped.
+
+// Average Case:
+// O(n²)
+
+
 #include<iostream>
 using namespace std;
 

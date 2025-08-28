@@ -3,6 +3,15 @@
 
 // Page no. -> 35
 
+// Best Case (Already Sorted):
+// O(n) → Each element is compared once, no shifts needed.
+
+// Worst Case (Reverse Sorted):
+// O(n²) → Each insertion shifts nearly all previous elements.
+
+// Average Case:
+// O(n²)
+
 #include<iostream>
 using namespace std;
 
