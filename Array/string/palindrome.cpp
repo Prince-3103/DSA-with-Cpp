@@ -1,7 +1,16 @@
 #include<iostream>
 using namespace std;
 
+void lowerCase(char s[], int len){
 
+    int i = 0;
+    while(i<len){
+        if(s[i]>='A' && s[i]<='Z'){
+            s[i] = s[i] - 'A' + 'a';
+        }
+        i++;
+    }
+}
 
 bool isPalindrome(char s[], int len){
 
@@ -27,6 +36,9 @@ int main(){
     while(string[count] != '\0'){
         count++;
     }
+
+    lowerCase(string,count);
+    cout<<"Your lower case string is:"<<string<<endl;;
 
     if(isPalindrome(string,count)){
         cout<<"Your string is palindrome.";
