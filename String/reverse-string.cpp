@@ -1,3 +1,6 @@
+// Hello world
+// Reverse string: olleH dlrow
+
 #include<iostream>
 #include<string>
 
