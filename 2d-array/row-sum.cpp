@@ -1,3 +1,8 @@
+// Your 2d array: 
+// 1 1 1 1  -> 4
+// 3 3 3 3  -> 12
+// 4 4 5 5  -> 18
+
 #include<iostream>
 using namespace std;
 

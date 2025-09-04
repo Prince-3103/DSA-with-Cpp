@@ -1,3 +1,9 @@
+// Your 2d array: 
+//       1 1 1 1 
+//       3 3 3 3 
+//       4 4 5 5 
+// sum-> 8 8 9 9
+
 #include<iostream>
 using namespace std;
 
