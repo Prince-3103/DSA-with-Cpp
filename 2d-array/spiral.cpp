@@ -2,8 +2,51 @@
 #include<vector>
 using namespace std;
 
-vector<int> spiralOrder(vector<vector<int>>& matrix, int row, int col) {
-    
+vector<int> spiralOrder(vector<vector<int> >& matrix) {
+    vector<int>ans;
+    int row = matrix.size();
+    int col = matrix[0].size();
+
+    int sRow = 0;
+    int sCol = 0;
+    int eRow = row - 1;
+    int eCol = col - 1;
+
+    int total = row * col;
+    int count = 0;
+
+    while(count < total){
+
+        // Print starting row
+        for(int index = sRow; index <= eCol; index++){
+            ans.push_back(matrix[sRow][index]);
+            count++;
+        }
+        sRow++;
+
+        // Print end column
+        for(int index = sRow; index <= eRow; index++){
+            ans.push_back(matrix[index][eCol]);
+            count++;
+        }
+        eCol--;
+
+        // print end row
+        for(int index = eCol; index >= sCol; index--){
+            ans.push_back(matrix[eRow][index]);
+            count++;
+        }
+        eRow--;
+        
+        // Print start column
+        for(int index = eRow; index >= sRow; index--){
+            ans.push_back(matrix[index][sCol]);
+            count++;
+        }
+        sCol++;
+
+    }
+    return ans;
 }
 
 int main(){
@@ -30,4 +73,11 @@ int main(){
         cout << endl;
     }
 
+    vector<int>spiralMatrix = spiralOrder(matrix);
+
+    cout << "Sprial ordr of your matrix: " << endl;
+    for(int i = 0; i < spiralMatrix.size(); i++){
+        cout << spiralMatrix[i] << " ";
+    }
+    cout << endl;
 }
