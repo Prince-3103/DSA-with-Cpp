@@ -21,6 +21,7 @@ int countPrime(int n){
             prime[j] = 0;
         }
     }
+    return count;
 }
 
 int main(){
@@ -28,4 +29,7 @@ int main(){
     cout<<"Enter number: ";
     cin>>n;
 
+    int numberPrime = countPrime(n);
+
+    cout << "Total number is prime till " << n <<": "<< numberPrime << endl;
 }
