@@ -9,6 +9,8 @@ using namespace std;
 int countPrime(int n){
     int count = 0;
     vector<bool> prime(n+1, true);
+
+    prime[0] = prime[1] = false;
 }
 
 int main(){
