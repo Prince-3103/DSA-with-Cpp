@@ -16,6 +16,10 @@ int countPrime(int n){
         if(prime[i]){
             count++;
         }
+
+        for(int j = i*i; j<n; j+=i){
+            prime[j] = 0;
+        }
     }
 }
 
