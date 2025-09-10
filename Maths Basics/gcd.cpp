@@ -26,4 +26,8 @@ int main(){
 
     cout <<"Enter two number to find its HCF: ";
     cin >> a >> b;
+
+    int ans = gcd(a,b);
+
+    cout << "LCM of " << a <<" and "<< b <<" is: "<<ans;
 }
