@@ -1,18 +1,25 @@
 #include<iostream>
 using namespace std;
 
-void add(int n, int sum){
+// void add(int n, int sum){
+//     if(n<1){
+//         cout << "Sum of number is: " << sum;
+//         return;
+//     }
+//     sum = sum + n;
+//     add(n-1, sum);
+// }
+
+int add(int n){
     if(n<1){
-        cout << "Sum of number is: " << sum;
-        return;
+        return 0;
     }
-    sum = sum + n;
-    add(n-1, sum);
+    return n + add(n-1);;
 }
 
 int main(){
     int n;
     cout << "Enter the number till you want to sum: ";
     cin >> n;
-    add(n,0);
+    cout << add(n);
 }
