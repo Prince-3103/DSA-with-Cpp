@@ -1,3 +1,10 @@
+// arr[5] = {1,3,1,4,2}
+// Finding numbers how many time they occured in an array
+// find = 3
+// ans = 1
+// find = 1
+// ans = 2
+
 #include<iostream>
 using namespace std;
 int main(){
